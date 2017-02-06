@@ -1,0 +1,243 @@
+﻿@charset "utf-8";
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	/*background-color: #FFF;*/
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #999;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+	font-weight: normal;
+}
+h1 {
+	font-size: 24px;
+	color: #666;
+	letter-spacing: 2px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: left;
+}
+p {
+	font-size: small;
+	letter-spacing: 180%;
+	text-align: left;
+}
+a img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+table tr td {
+	font-size: small;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+
+#container {
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	/*background-color: #FFF;*/
+}
+
+#top {
+	text-align: right;
+	font-size: small;
+	/*background-color: #FFF;*/
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 10px;
+	height: 30px;
+	width: 925px;
+	padding-right: 25px;
+}
+
+#header {
+	width: 950px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: 100px;
+	/*background-color: #FFF;*/
+}
+#navbar {
+	width: 950px;
+	/*background-color: #FFF;*/
+	height: 50px;
+	/*
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #600;*/
+}
+#navbar ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	font-size: small;
+	/*background-color: #FFF;*/
+	font-weight: bold;
+}
+#navbar ul li {
+	float: left;
+	width: 14%;
+	text-align: center;
+	padding: 0px;
+	/*background-color: #FFF;*/
+	margin: 0px;
+}
+#navbar a {
+	/*background-color: #FFF;*/
+	display: block;
+	text-transform: uppercase;
+	font-size: small;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#contents {
+	width: 950px;
+	clear: both;
+	text-align: left;
+	font-size: small;
+	background-color: #FFF;
+	margin: 0px;
+	overflow: hidden;
+	padding-bottom: 0px;
+}
+#side {
+	width: 189px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 40px;
+	/*background-color: #FFF;*/
+	/*border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999;*/
+	/*padding-bottom: 300px;*/
+	/*margin-bottom: 300px;*/
+}
+#main {
+	width: 710px;
+	float: right;
+	font-size: small;
+	text-align: left;
+	/*background-color: #FFF;*/
+	padding-top: 40px;
+	margin: 0px;
+	padding-left: 40px;
+}
+
+
+#btmbar {
+	width: 950px;
+	/*background-color: #FFF;*/
+	height: 50px;
+	/*margin-top:30px;*/
+	/*
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #600;*/
+}
+#btmbar ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	font-size: small;
+	/*background-color: #FFF;*/
+	font-weight: bold;
+}
+#btmbar ul li {
+	float: left;
+	/*width: 14%;*/
+	text-align: center;
+	padding: 0px;
+	/*background-color: #FFF;*/
+	margin: 0px;
+}
+#btmbar a {
+	/*background-color: #FFF;*/
+	display: block;
+	text-transform: uppercase;
+	font-size: small;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+
+#footer {
+	width: 100%;
+	position: absolute;
+	height: 80px;
+	/*border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #600;
+	background-color: #FFF;*/
+	font-size: small;
+	text-align: center;
+	padding-top: 10px;
+	line-height: 200%;
+
+}
+#footer-inner {
+	width: 950px;
+	height: 80px;
+	text-alirn: center;
+	font-size: x-small;
+	text-align: center;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 10px;
+	/*background-color: #FFF;*/
+}
+
+hr {
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #DDDDDD;
+	text-align: center;
+}
+.white {
+	color: #FFF;
+}
+.red {
+	color: #7C0324;
+}
+.waku {
+	border: 1px solid #CCC;
+}
+.bg01 {
+	background-image: url(st006.gif);
+}
