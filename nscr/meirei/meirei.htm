@@ -13,1291 +13,2284 @@ content="text/html; charset=utf-8">
 vlink="#FF66FF" alink="#CC99FF" topmargin="20" leftmargin="20"
 class="page" marginheight="0" marginwidth="0">
 
-<h2>Function Categorization Table</h2>
-<h2>函数分类表</h2>
+<h2>Function Categorization Table<br>
+功能分类表
+</h2>
+
+<h5>命令の背景色について<br>
+关于命令的背景色
+</h5>
 
 <table border="0">
     <tr>
-        <td width="75" bgcolor="#FFCCCC"><font size="2">Predefined Syntax</font></td>
-        <td><font size="2">Keywords or labels with predefined functions</font></td>
+        <td width="75" bgcolor="#FFCCCC">
+			<font size="2">Predefined Syntax</font><br>
+			<font size="2">特別定義語</font><br>
+			<font size="2">特殊定义</font>
+		</td>
+        <td>
+			<font size="2">Keywords or labels with predefined functions</font><br>
+			<font size="2">特別な意味がある単語およびラベル</font><br>
+			<font size="2">特殊意义的关键词和标号</font>
+		</td>
     </tr>
     <tr>
-        <td width="75" bgcolor="#FFCCCC"><font size="2">预定义语法</font></td>
-        <td><font size="2">具有预定义功能的关键字或标号</font></td>
+        <td width="75" bgcolor="#FFFFCC">
+			<font size="2">F Commands</font><br>
+			<font size="2">F命令</font><br>
+			<font size="2">F命令</font>
+		</td>
+        <td>
+			<font size="2">Commands that may only be used in the definition block</font><br>
+			<font size="2">定義ブロックのみで使える命令</font><br>
+			<font size="2">仅用于定义块内的命令</font>
+		</td>
     </tr>
     <tr>
-        <td width="75" bgcolor="#FFFFCC"><font size="2">F Commands</font></td>
-        <td><font size="2">Commands that may only be used in the definition block</font></td>
+        <td width="75" bgcolor="#CCFFFF">
+			<font size="2">E Commands</font><br>
+			<font size="2">E命令</font><br>
+			<font size="2">E命令</font>
+		</td>
+        <td>
+			<font size="2">Commands that may only be used in the program block</font><br>
+			<font size="2">実行ブロックのみでのみ使える命令</font><br>
+			<font size="2">仅用于执行块的命令</font>
+		</td>
     </tr>
     <tr>
-        <td width="75" bgcolor="#FFFFCC"><font size="2">F命令</font></td>
-        <td><font size="2">只能在定义块中使用的命令</font></td>
+        <td width="75" bgcolor="#CCFFCC">
+			<font size="2">F/E Commands</font><br>
+			<font size="2">F・E命令</font><br>
+			<font size="2">F/E命令</font>
+		</td>
+        <td>
+			<font size="2">Commands that may be used in the program or the definition block</font><br>
+			<font size="2">定義ブロックでも実行ブロックでも使える命令</font><br>
+			<font size="2">既可用于定义块内又可用于执行块内的命令</font>
+		</td>
     </tr>
     <tr>
-        <td width="75" bgcolor="#CCFFFF"><font size="2">E Commands</font></td>
-        <td><font size="2">Commands that may only be used in the program block</font></td>
-    </tr>
-    <tr>
-        <td width="75" bgcolor="#CCFFFF"><font size="2">E命令</font></td>
-        <td><font size="2">只能在程序块中使用的命令</font></td>
-    </tr>
-    <tr>
-        <td width="75" bgcolor="#CCFFCC"><font size="2">F/E Commands</font></td>
-        <td><font size="2">Commands that may be used in the program or the definition block</font></td>
-    </tr>
-    <tr>
-        <td width="75" bgcolor="#CCFFCC"><font size="2">F/E命令</font></td>
-        <td><font size="2">可在程序或定义块中使用的命令</font></td>
-    </tr>
-    <tr>
-        <td width="75" bgcolor="#CCCCFF"><font size="2">Special Characters</font></td>
-        <td><font size="2">Special characters that may be used as command substitutes within displayed text blocks</font></td>
-    </tr>
-    <tr>
-        <td width="75" bgcolor="#CCCCFF"><font size="2">特殊字符</font></td>
-        <td><font size="2">可以用作已显示文本块中的命令代用词的特殊字符</font></td>
+        <td width="75" bgcolor="#CCCCFF">
+			<font size="2">Special Characters</font><br>
+			<font size="2">特殊文字</font><br>
+			<font size="2">特殊字符</font>
+		</td>
+        <td>
+			<font size="2">Special characters that may be used as command substitutes within displayed text blocks</font><br>
+			<font size="2">表示文章の中で命令の代わりとして使う特殊な単語</font><br>
+			<font size="2">在显示文章中作为命令的替换品使用的特殊关键词</font>
+		</td>
     </tr>
 </table>
 
-<h5>Game Start/Reset/Quit</h5>
+<h5>Game Start/Reset/Quit<br>
+ゲームスタート・リセット・終了<br>
+游戏开始/重置/结束
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="define.htm"><strong>*define</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">label denoting the start of the definition block</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			label denoting the start of the definition block<br>
+			定義ブロックの開始位置ラベル<br>
+			定义块的开始位置标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="start.htm"><strong>*start</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">label denoting the start of the program block</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			label denoting the start of the program block<br>
+			実行ブロックの開始位置ラベル<br>
+			执行块的开始位置标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="game.htm" target="sc"><strong>game</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">end definition block and execute game</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			end definition block and execute game<br>
+			定義ブロックを終了し、ゲームを実行する<br>
+			结束定义块，运行游戏
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="reset.htm" target="sc"><strong>reset</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">reset game</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			reset game<br>
+			ゲームをリセットする<br>
+			重置游戏
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="definereset.htm" target="sc"><strong>definereset</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">force total script reset</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			force total script reset<br>
+			スクリプトを読みなおさせる<br>
+			重新读取脚本
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="end.htm" target="sc"><strong>end</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">end game and close window</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			end game and close window<br>
+			ゲームを終了してウインドウを消す<br>
+			结束游戏并关闭窗口
+		</td>
     </tr>
 </table>
 
-<h5>Syntax Markers</h5>
+<h5>Syntax Markers<br>
+スクリプト書式関連<br>
+脚本语法相关
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="syosiki01.htm"><strong>*</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">prefix for labels</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			prefix for labels<br>
+			ラベルの接頭語<br>
+			标号前缀
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="syosiki02.htm"><strong>;</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">prefix for comments</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			prefix for comments<br>
+			この記号がある行をコメントとして扱う<br>
+			存在这个记号的行被视为注释
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="syosiki03.htm"><strong>:</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">write and execute multiple commands on a line</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			write and execute multiple commands on a line<br>
+			一行に複数の命令をつなげて書く<br>
+			在一行里把复数个命令连起来书写
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="syosiki04.htm"><strong>%</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">prefix for numerical variables</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			prefix for numerical variables<br>
+			数字変数の接頭語<br>
+			数字变量前缀
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="syosiki05.htm"><strong>$</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">prefix for character variables</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			prefix for character variables<br>
+			文字変数の接頭語<br>
+			字符串变量前缀
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="syosiki06.htm"><strong>?</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">prefix for array variables</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			prefix for array variables<br>
+			配列変数の接頭語<br>
+			数组变量前缀
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><a
         href="syosiki07.htm"><strong>~</strong></a></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">destination point for jumpf/jumpb</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			destination point for jumpf/jumpb<br>
+			jumpf　と　jumpb　の飛び先<br>
+			jumpf与jumpb的跳跃目的地
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu04.htm" target="sc"><strong>/</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">ignore linefeed</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			ignore linefeed<br>
+			改行を無視する<br>
+			忽略换行
+		</td>
     </tr>
 </table>
 
-<h5>Text Window</h5>
+<h5>Text Window<br>
+テキストウィンドウ<br>
+文本窗口
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="setwindow.htm" target="sc"><strong>setwindow</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">set up text window and character display attributes</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			set up text window and character display attributes<br>
+			テキストウインドウと文字の表示の仕方を設定する<br>
+			设置文本窗口与文字的显示方法
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="setwindow2.htm" target="sc"><strong>setwindow2</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">modify text window appearnace</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			modify text window appearnace<br>
+			ウィンドウの見た目だけを変更する<br>
+			只修改窗口的外观
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="textoff.htm" target="sc"><strong>textoff</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">hide text window</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			hide text window<br>
+			テキストウインドウを消す<br>
+			关闭文本窗口
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="texton.htm" target="sc"><strong>texton</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">show text window</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			show text window<br>
+			テキストウインドウを出す<br>
+			弹出文本窗口
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="windoweffect.htm" target="sc"><strong>windoweffect</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">specify an effect for the text window</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			specify an effect for the text window<br>
+			テキストウインドウのエフェクトを指定する<br>
+			指定文本窗口的特效
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="erasetextwindow.htm" target="sc"><strong>erasetextwindow</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">toggle text display at effect runtime</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			toggle text display at effect runtime<br>
+			エフェクトの時もテキストウインドウを消さないようにする<br>
+			就算执行特效的时候文本窗口也不会消失
+		</td>
     </tr>
 </table>
 
-<h5>Text Display</h5>
+<h5>Text Display<br>
+テキスト表示<br>
+文本显示
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="defaultfont.htm" target="sc"><strong>defaultfont</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">specify default font</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			specify default font<br>
+			フォントの種類を指定する<br>
+			指定字体类型
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu05.htm" target="sc"><strong>!s</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">designate character display speed</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			designate character display speed<br>
+			文字表示速度を指定する<br>
+			指定文字显示速度
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu06.htm" target="sc"><strong>#</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">change character color</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			change character color<br>
+			文字の色を変える<br>
+			改变文字颜色
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="textclear.htm" target="sc"><strong>textclear</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">clear displayed text</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			clear displayed text<br>
+			表示されているテキストを消す<br>
+			清除正在显示的文本
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="locate.htm" target="sc"><strong>locate</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">change the position of characters without changing the position of the text window</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			change the position of characters without changing the position of the text window<br>
+			テキストウインドウの設定を変えないで文字の表示位置を変える<br>
+			在不修改文本窗口设定的情况下改变文字显示位置
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="puttext.htm" target="sc"><strong>puttext</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">write out little indications (after if statements, for instance)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			write out little indications (after if statements, for instance)<br>
+			if文のあとなどにちょっとした表示をする<br>
+			在诸如if语句后，执行一点点显示
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="br.htm" target="sc"><strong>br</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">insert a carriage return into the displayed text</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			insert a carriage return into the displayed text<br>
+			表示する文章に空行をはさむ<br>
+			在显示的文本中插入空行
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="textspeed.htm" target="sc"><strong>textspeed</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">change text display speed</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			change text display speed<br>
+			テキストの表示速度を変更する<br>
+			修改文本的显示速度
+		</td>
     </tr>
 </table>
 
-<h5>Click Wait</h5>
+<h5>Click Wait<br>
+クリック待ち<br>
+点击等待
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu01.htm" target="sc"><strong>@</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">enter click wait state</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			enter click wait state<br>
+			クリック待ちする<br>
+			等待点击
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu02.htm" target="sc"><strong>\</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">enter carriage return wait state</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			enter carriage return wait state<br>
+			改ページ待ちする<br>
+			等待换页
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="clickstr.htm" target="sc"><strong>clickstr</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">enter click wait state upon hitting the specified string</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			enter click wait state upon hitting the specified string<br>
+			特定の文字があったらクリック待ちにする<br>
+			如果遇到特定的字符，等待点击
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu03.htm" target="sc">_</a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">ignore the next click</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			ignore the next click<br>
+			直後の強制クリックを無視する<br>
+			忽略紧接着的下一个强制点击
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="linepage.htm" target="sc"><strong>linepage</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">wait for click at the end of line</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			wait for click at the end of line<br>
+			一行ごとにクリック待ちするようにする<br>
+			每显示一行都等待点击
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="clickvoice.htm" target="sc"><strong>clickvoice</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">play a specified sound at time of click</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			play a specified sound at time of click<br>
+			クリック待ちでクリックしたときに音を鳴らす<br>
+			在点击等待情况下点击时播放声音
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="autoclick.htm" target="sc"><strong>autoclick</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">continue to progress even in the absence of a click</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			continue to progress even in the absence of a click<br>
+			クリックしなくても自動で進むようにする<br>
+			即使没有点击也会自动前进
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="click.htm" target="sc"><strong>click</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter click wait state without displaying the click wait cursor</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter click wait state without displaying the click wait cursor<br>
+			クリック待ちカーソルを表示せずにクリック待ちする<br>
+			在不显示点击等待光标的情况下等待点击
+		</td>
     </tr>
 </table>
 
-<h5>Cursor</h5>
+<h5>Cursor<br>
+カーソル<br>
+光标
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="setcursor.htm" target="sc"><strong>setcursor</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">specify graphic file for click wait cursor</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			specify graphic file for click wait cursor<br>
+			クリック待ちのカーソル画像ファイルの表示設定<br>
+			设置点击等待的光标图像文件的显示
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="abssetcursor.htm" target="sc"><strong>abssetcursor</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">lock mouse position and specify graphic file for click wait cursor</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			lock mouse position and specify graphic file for click wait cursor<br>
+			位置を固定してクリック待ちカーソルを表示する<br>
+			在固定位置下显示点击等待光标
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="mousecursor.htm" target="sc"><strong>mousecursor</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">specify graphic file for general mouse cursor (presently NOT recommended)</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			specify graphic file for general mouse cursor (presently NOT recommended)<br>
+			マウスカーソル画像を設定する<br>
+			设置鼠标光标图片
+		</td>
     </tr>
 </table>
 
-<h5>Image Display</h5>
+<h5>Image Display<br>
+画像表示<br>
+图像显示
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="transmode.htm" target="sc"><strong>transmode</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">change alpha blend transparency mode</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			change alpha blend transparency mode<br>
+			アルファブレンドの透明部分のデフォルト設定を変える<br>
+			改变透明混合的透明部分的默认设置
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="underline.htm" target="sc"><strong>underline</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">set ground line for standing images</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			set ground line for standing images<br>
+			立ち絵の接地ラインを決める<br>
+			指定立绘的接地线（注：日文版为F/E命令）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="bgalia.htm" target="sc"><strong>bgalia</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">set parameters for a nonstandard background</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			set parameters for a nonstandard background<br>
+			特殊なサイズの背景を表示する<br>
+			显示特殊大小的背景
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="humanz.htm" target="sc"><strong>humanz</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate overlap priority for sprites and standing images</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate overlap priority for sprites and standing images<br>
+			スプライトと立ち絵の重なりの優先順位を指定する<br>
+			指定精灵和立绘的重合优先次序
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="windowback.htm" target="sc"><strong>windowback</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">insert text window at the same position as the standing image(s)</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			insert text window at the same position as the standing image(s)<br>
+			テキストウィンドウを、立ち絵と同じ位置に挿入<br>
+			在与立绘相同的位置插入文本窗口
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="bg.htm" target="sc"><strong>bg</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">set background image</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			set background image<br>
+			背景画像を表示する<br>
+			显示背景图像
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="ld.htm" target="sc"><strong>ld</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">set standing image</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			set standing image<br>
+			立ち絵を表示する<br>
+			显示立绘
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="cl.htm" target="sc"><strong>cl</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">erase specified standing image</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			erase specified standing image<br>
+			表示している立ち絵を消す<br>
+			清除正在显示的立绘
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="tal.htm" target="sc"><strong>tal</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">modify standing image transparency</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			modify standing image transparency<br>
+			立ち絵の透明度を変更する<br>
+			修改立绘的透明度
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="print.htm" target="sc"><strong>print</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">display all images, removing those that should not be present</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			display all images, removing those that should not be present<br>
+			表示可能の状態の画像を表示し表示不可の状態の画像を消す<br>
+			显示所有可以显示状态的图像，清除所有不可显示状态的图像
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="lsp.htm" target="sc"><strong>lsp</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">load sprite into memory so that it may be displayed</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			load sprite into memory so that it may be displayed<br>
+			スプライトを表示可能な状態でメモリ上に呼び出す<br>
+			在可以显示状态下加载精灵到内存中
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="lsph.htm" target="sc"><strong>lsph</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">load sprite into memory, overwriting the last invalid sprite</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			load sprite into memory, overwriting the last invalid sprite<br>
+			スプライトを表示不可の状態でメモリ上に呼び出す<br>
+			在不可显示状态下加载精灵到内存中
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="csp.htm" target="sc"><strong>csp</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">delete sprite from memory</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			delete sprite from memory<br>
+			スプライトをメモリ上から消す<br>
+			在内存中删除精灵
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="vsp.htm" target="sc"><strong>vsp</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">toggle sprite display (must be loaded via lsp/lsph first)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			toggle sprite display (must be loaded via lsp/lsph first)<br>
+			スプライトの表示・非表示を切り替える<br>
+			切换精灵的显示/非显示状态
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="spstr.htm" target="sc"><strong>spstr</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">change the text string on a complex button by rewriting the text sprite</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			change the text string on a complex button by rewriting the text sprite<br>
+			複合ボタンの文字列でのスプライト指定で表示・非表示を切り替える<br>
+			通过复合按钮的字符串指定精灵，切换显示/非显示状态
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="msp.htm" target="sc"><strong>msp</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">change sprite position (method 1)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			change sprite position (method 1)<br>
+			スプライトの表示位置を変える（その１）<br>
+			修改精灵的显示位置（方法一）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="amsp.htm" target="sc"><strong>amsp</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">change sprite position (method 2)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			change sprite position (method 2)<br>
+			スプライトの表示位置を変える（その２）<br>
+			改变精灵的显示位置（方法二）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="cell.htm" target="sc"><strong>cell</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">manually designate the cell of a sprite</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			manually designate the cell of a sprite<br>
+			直接スプライトのセルを指定する<br>
+			指定直接精灵的格子
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="blt.htm" target="sc"><strong>blt</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">blit image onto screen instantaneously</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			blit image onto screen instantaneously<br>
+			高速に画面上で画像表示する<br>
+			高速地在屏幕上显示图像
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="ofscpy.htm" target="sc"><strong>ofscpy</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">transfer an image drawn by blt onto the offscreen buffer</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			transfer an image drawn by blt onto the offscreen buffer<br>
+			blt命令で描かれた画像をオフスクリーンバッファに転送する<br>
+			把在blt命令下绘画的图像传输到离屏缓冲
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="repaint.htm" target="sc"><strong>repaint</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">redraw screen</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			redraw screen<br>
+			画面を書きなおす<br>
+			重新绘画屏幕
+		</td>
     </tr>
 </table>
 
-<h5>Image Effects</h5>
+<h5>Image Effects<br>
+画像エフェクト<br>
+图像特效
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="effect.htm" target="sc"><strong>effect</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate effect</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate effect<br>
+			エフェクトの指定をする<br>
+			指定特效
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="effectblank.htm" target="sc"><strong>effectblank</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate wait time after effect is over</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate wait time after effect is over<br>
+			エフェクト終了後のウエイトを設定する<br>
+			设置特效结束后的等待
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="effectcut.htm" target="sc"><strong>effectcut</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">toggle effect runtime during choice dialog</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			toggle effect runtime during choice dialog<br>
+			「選択肢までとばす」時、エフェクトをすべて瞬間表示にする<br>
+			「快进直到选择项」的时候，特效全都瞬间显示
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="quake.htm" target="sc"><strong>quake</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">cause a quake effect onscreen</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			cause a quake effect onscreen<br>
+			画面を揺らす<br>
+			摇动屏幕
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="quakex.htm" target="sc"><strong>quakex</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">cause a horizontal shaking effect onscreen</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			cause a horizontal shaking effect onscreen<br>
+			画面を横に揺らす<br>
+			横向摇动屏幕
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="quakey.htm" target="sc"><strong>quakey</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">cause a vertical shaking effect onscreen</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			cause a vertical shaking effect onscreen<br>
+			画面を縦に揺らす<br>
+			纵向摇动屏幕
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="monocro.htm" target="sc"><strong>monocro</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">make screen monochrome</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			make screen monochrome<br>
+			モノクロ・セピア色画面にする<br>
+			切换为单色/深棕色屏幕
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="nega.htm" target="sc"><strong>nega</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">make screen negative</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			make screen negative<br>
+			ネガポジ反転して表示する<br>
+			底片翻转地显示
+		</td>
     </tr>
 </table>
 
-<h5>Characters/Numbers/Bar Display</h5>
+<h5>Characters/Numbers/Bar Display<br>
+文字・数字・バー表示<br>
+字符/数字/条块显示
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu10.htm" target="sc"><strong>%</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">display contents of numerical variable</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			display contents of numerical variable<br>
+			数字変数の中身を表示<br>
+			显示数字变量内容
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu09.htm" target="sc"><strong>$</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">display contents of character variable</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			display contents of character variable<br>
+			文字変数の中身を表示<br>
+			显示字符串变量的内容
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="bar.htm" target="sc"><strong>bar</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">create and display the bar</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			create and display the bar<br>
+			バーの表示指定をする<br>
+			指定条块的显示
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
-        href="barclear.htm" target="sc" 　　　><strong>barclear</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">clear the bar display
+        href="barclear.htm" target="sc"><strong>barclear</strong></a></td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			clear the bar display<br>
+			バーの設定をクリアする<br>
+			清除条块的设置
         </td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="prnum.htm" target="sc"><strong>prnum</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">initialize a numerical label</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			initialize a numerical label<br>
+			数値ラベル表示設定をする<br>
+			设置数值标签的显示
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="prnumclear.htm" target="sc"><strong>prnumclear</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">clear a numerical label</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			clear a numerical label<br>
+			数値ラベル設定をクリアする<br>
+			清除数值标签的设置
+		</td>
     </tr>
 </table>
 
-<h5>Music/SFX Playback</h5>
+<h5>Music/SFX Playback<br>
+音楽・SE演奏<br>
+音乐/音效播放
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="cdfadeout.htm" target="sc"><strong>cdfadeout</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate CD-DA fadeout time</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate CD-DA fadeout time<br>
+			CD-DAのフェードアウトの時間を指定<br>
+			指定CD-DA的淡出时间
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="mp3fadeout.htm" target="sc"><strong>mp3fadeout</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate mp3 fadeout time</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate mp3 fadeout time<br>
+			BGMのフェードアウト時間を指定する<br>
+			指定BGM的淡出时间（注：日文版为F/E命令）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="play.htm" target="sc"><strong>play</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">play CD-DA or MIDI</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			play CD-DA or MIDI<br>
+			CD-DAやMIDIをループで演奏する<br>
+			循环播放CD-DA和MIDI
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="playonce.htm" target="sc"><strong>playonce</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">play specified CD-DA track or MIDI file only once</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			play specified CD-DA track or MIDI file only once<br>
+			CD-DAやMIDIを一度だけ演奏する<br>
+			仅播放一次CD-DA和MIDI
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="playstop.htm" target="sc"><strong>playstop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">stop CD-DA or MIDI playback</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			stop CD-DA or MIDI playback<br>
+			CD-DAとMIDIの演奏を止める<br>
+			停止播放CD-DA和MIDI
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="wave.htm" target="sc"><strong>wave</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">play a WAV file only once</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			play a WAV file only once<br>
+			WAVEを演奏する<br>
+			播放WAVE
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="waveloop.htm" target="sc"><strong>waveloop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">loop WAV file playback</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			loop WAV file playback<br>
+			WAVEをループで演奏する<br>
+			循环播放WAVE
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="wavestop.htm" target="sc"><strong>wavestop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">stop WAV file playback</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			stop WAV file playback<br>
+			WAVEの演奏を止める<br>
+			停止播放WAVE
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="mp3.htm" target="sc"><strong>mp3</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">play specified mp3 file only once</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			play specified mp3 file only once<br>
+			圧縮された音楽ファイルを一度だけ演奏する<br>
+			仅播放一次压缩音乐文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="mp3loop.htm" target="sc"><strong>mp3loop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">loop mp3 file playback</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			loop mp3 file playback<br>
+			圧縮された音楽ファイルをループで演奏する<br>
+			循环地播放压缩音乐文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="mp3save.htm" target="sc"><strong>mp3save</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">if game saved amidst mp3 playback, when game is loaded, resume playback at that spot</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			if game saved amidst mp3 playback, when game is loaded, resume playback at that spot<br>
+			mp3再生中にセーブするとロード後もを再生<br>
+			如果mp3在播放的时候保存游戏，那么加载游戏后它也会被恢复播放
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="dsound.htm" target="sc"><strong>dsound</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">declare that you are using DirectSound (not necessary in latest versions)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			declare that you are using DirectSound (not necessary in latest versions)<br>
+			DirectSoundを使うことを宣言する（現在は使わなくてよい）<br>
+			声明已经使用了DirectSound（现在不使用这个命令也行）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="dwave.htm" target="sc"><strong>dwave</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">play WAV file using DirectSound only once</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			play WAV file using DirectSound only once<br>
+			DirectSoundを使いＷＡＶファイルを演奏する<br>
+			使用DirectSound播放WAV文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="dwaveloop.htm" target="sc"><strong>dwaveloop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">loop WAV file using DirectSound</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			loop WAV file using DirectSound<br>
+			DirectSoundを使いＷＡＶファイルをループで演奏する<br>
+			使用DirectSound循环播放WAV文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="dwavestop.htm" target="sc"><strong>dwavestop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">stop WAV file playback in DirectSound</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			stop WAV file playback in DirectSound<br>
+			DirectSoundのＷＡＶファイル演奏を止める<br>
+			停止使用DirectSound的WAV文件播放
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="dwaveload.htm" target="sc"><strong>dwaveload </strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">load WAV file into memory</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			load WAV file into memory<br>
+			メモリ上にwaveファイルをロードする<br>
+			加载WAV文件到内存里
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="dwaveplay.htm" target="sc"><strong>dwaveplay </strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">play a WAV file already in memory once</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			play a WAV file already in memory once<br>
+			ロードしてあるwaveファイルを再生する<br>
+			播放已经加载的wave文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="dwaveplayloop.htm" target="sc"><strong>dwaveplayloop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">loop playback of a WAV file already in memory</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			loop playback of a WAV file already in memory<br>
+			ロードしてあるwaveファイルをループで再生する<br>
+			循环播放已经加载的wave文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="stop.htm" target="sc"><strong>stop</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">stop all music playback</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			stop all music playback<br>
+			演奏されている全ての音楽を止める<br>
+			停止播放正在播放的所有音乐
+		</td>
     </tr>
 </table>
 
-<h5>Movie Playback</h5>
+<h5>Movie Playback<br>
+動画再生<br>
+视频播放
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="avi.htm" target="sc"><strong>avi</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">playback an AVI file</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			playback an AVI file<br>
+			aviファイルを再生する<br>
+			播放avi文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="mpegplay.htm" target="sc"><strong>mpegplay</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">playback an MPEG file</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			playback an MPEG file<br>
+			mpegムービーを再生する<br>
+			播放mpeg视频
+		</td>
     </tr>
 </table>
 
-<h5>Choices</h5>
+<h5>Choices<br>
+選択肢<br>
+选择项
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="selectcolor.htm" target="sc"><strong>selectcolor</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate choice text color</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate choice text color<br>
+			選択肢の文字の表示色を指定する<br>
+			指定选择项的文字显示颜色
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="selectvoice.htm" target="sc"><strong>selectvoice</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate sound to play upon choice select</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate sound to play upon choice select<br>
+			選択肢を選んだときに音を鳴らす<br>
+			选择选择项时发出声音
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="select.htm" target="sc"><strong>select</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">set up a choice</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			set up a choice<br>
+			選択肢を表示する<br>
+			显示选择项
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="selgosub.htm" target="sc"><strong>selgosub</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">set up a choice that jumps to a subroutine</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			set up a choice that jumps to a subroutine<br>
+			サブルーチンへジャンプする選択肢を表示する<br>
+			显示跳向子例程的选择项
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="selnum.htm" target="sc"><strong>selnum</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">display chosen choice and add its result to the specified numerical variable</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			display chosen choice and add its result to the specified numerical variable<br>
+			選択肢を表示してその結果を数字変数に数字で代入する<br>
+			显示选择项并且把那个结果以数字形式带入到数字变量中
+		</td>
     </tr>
 </table>
 
-<h5>Jump</h5>
+<h5>Jump<br>
+ジャンプ<br>
+跳转
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="goto.htm" target="sc"><strong>goto</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">jump to designated label</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			jump to designated label<br>
+			指定するラベルへジャンプする<br>
+			跳转到指定标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="skip.htm" target="sc"><strong>skip</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">skip the next x lines of script</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			skip the next x lines of script<br>
+			スクリプトを指定した行数だけスキップさせる<br>
+			跳过指定脚本的行数 
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="gosub.htm" target="sc"><strong>gosub</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">call a subroutine</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			call a subroutine<br>
+			サブルーチンをコールする<br>
+			调用子例程
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="return.htm" target="sc"><strong>return</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">return from a subroutine</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			return from a subroutine<br>
+			サブルーチンから戻る<br>
+			从子例程中返回
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="jumpf.htm" target="sc"><strong>jumpf</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">jump to the position of the next ~ symbol</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			jump to the position of the next ~ symbol<br>
+			次の~記号の場所にジャンプする<br>
+			跳到下一个~记号的地方
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="jumpb.htm" target="sc"><strong>jumpb</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">jump to the position of the last ~ symbol</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			jump to the position of the last ~ symbol<br>
+			直前の~記号の場所にジャンプする<br>
+			跳到前面最近的一个~记号的地方
+		</td>
     </tr>
 </table>
 
-<h5>Jump to Flag on Click</h5>
+<h5>Jump to Flag on Click<br>
+クリック監視フラグジャンプ<br>
+点击监听标记跳转
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="trap.htm" target="sc"><strong>trap</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">jump to specified label on left click</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			jump to specified label on left click<br>
+			左クリックに反応して指定ラベルへジャンプする<br>
+			响应左键点击跳转到指定标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="../meirei/lr_trap.htm" target="sc"><strong>lr_trap</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">jump to specified label on left or right click</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			jump to specified label on left or right click<br>
+			左右クリックに反応して指定ラベルへジャンプする<br>
+			响应左右键点击跳转到指定标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="../meirei/trap2.htm" target="sc"><strong>trap2</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">jump to specified label on left click when 「skip to next choice」 is set</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			jump to specified label on left click when 「skip to next choice」 is set<br>
+			左クリックと「次の選択肢に進む」に反応して指定ラベルへジャンプする<br>
+			响应左键点击和「快进到下一个选择项」跳转到指定标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="../meirei/lr_trap2.htm" target="sc"><strong>lr_trap2</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">jump to specified label on left or right click when 「skip to next choice」 is set</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			jump to specified label on left or right click when 「skip to next choice」 is set<br>
+			左右クリックと「次の選択肢に進む」に反応して指定ラベルへジャンプする<br>
+			响应左右键点击和「快进到下一个选择项」跳转到指定标号
+		</td>
     </tr>
 </table>
 
-<h5>Image Buttons</h5>
+<h5>Image Buttons<br>
+画像ボタン<br>
+图像按钮
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="btndef.htm" target="sc"><strong>btndef</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">load button graphic file into memoryく</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			load button graphic file into memory<br>
+			ボタン画像ファイルをメモリ上に呼び出しておく<br>
+			加载按钮图像文件到内存中
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="btn.htm" target="sc"><strong>btn</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">initialize image as button (method 1)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			initialize image as button (method 1)<br>
+			画像でボタンを配置する（その１）<br>
+			用图像配置按钮（方法1）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="btnwait.htm" target="sc"><strong>btnwait</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">display image button and put it in click wait state (method 1)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			display image button and put it in click wait state (method 1)<br>
+			画像ボタンを表示してクリック待ちする（その１）<br>
+			显示图像按钮并等待点击（方法1）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="btnwait2.htm" target="sc"><strong>btnwait2</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">display image button and put it in click wait state (method 2)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			display image button and put it in click wait state (method 2)<br>
+			画像ボタンを表示してクリック待ちする（その２）<br>
+			显示图像按钮并等待点击（方法2）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="spbtn.htm" target="sc"><strong>spbtn</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">designate sprite as image button</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			designate sprite as image button<br>
+			スプライトをボタン画像に指定する<br>
+			指定精灵为按钮图像
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="getbtntimer.htm" target="sc"><strong>getbtntimer</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">acquire how much time has passed since we have entered btnwait into a numerical variable</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			acquire how much time has passed since we have entered btnwait into a numerical variable<br>
+			btnwaitを抜けるときどのくらい待ったか取得する<br>
+			获取脱离btnwait的时候等待了多长时间
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="btntime.htm" target="sc"><strong>btntime</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">create a time restraint for image button functionality</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			create a time restraint for image button functionality<br>
+			時間制限つき画像ボタンの制限時間を設定する<br>
+			设置带时间限制的图像按钮的限制时间
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="exbtn.htm" target="sc"><strong>exbtn</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">create a complex (composite) button</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			create a complex (composite) button<br>
+			複合ボタンのボタン設定をする<br>
+			设置复合按钮的按钮
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="exbtn_d.htm" target="sc"><strong>exbtn_d</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">specify cursor behavior on utilization of a complex button</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			specify cursor behavior on utilization of a complex button<br>
+			複合ボタン使用時カーソルがどれにも重なっていない時の指定をする<br>
+			指定使用复合按钮时鼠标光标与它哪里也不重合的时候
+		</td>
     </tr>
 </table>
 
-<h5>Wait/Timer</h5>
+<h5>Wait/Timer<br>
+ウェイト・タイマー<br>
+等待/定时器
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu07.htm" target="sc"><strong>!d</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">wait for the specified time</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			wait for the specified time<br>
+			指定時間待つ<br>
+			指定时间等待
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu08.htm" target="sc"><strong>!w</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">wait for the specified time, ignoring clicks</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			wait for the specified time, ignoring clicks<br>
+			クリック無視で指定時間待つ<br>
+			忽略点击的指定时间等待
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="delay.htm" target="sc"><strong>delay</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">cause a time delay (method 1)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			cause a time delay (method 1)<br>
+			時間待ちする（その１）<br>
+			等待指定的时间（方法1）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="wait.htm" target="sc"><strong>wait</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">cause a time delay (method 2)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			cause a time delay (method 2)<br>
+			時間待ちする（その２）<br>
+			等待指定的时间（方法2）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="resettimer.htm" target="sc"><strong>resettimer</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">reset internal timer</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			reset internal timer<br>
+			内部タイマーをリセットする<br>
+			重置内部定时器
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="waittimer.htm" target="sc"><strong>waittimer</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">wait until specified time (as counted by the internal time) elapses</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			wait until specified time (as counted by the internal time) elapses<br>
+			内部タイマーが指定した時間を超えるまで待つ<br>
+			等待直至内部定时器超过指定时间
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="gettimer.htm" target="sc"><strong>gettimer</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">get value of internal timer</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			get value of internal timer<br>
+			内部タイマの値を取得する<br>
+			获取内部定时器的值
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="spwait.htm" target="sc"><strong>spwait</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">wait until the designated sprite number's animation has ended</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			wait until the designated sprite number's animation has ended<br>
+			指定したスプライト番号のアニメーションが終わるのを待つ
+			等待直至指定精灵编号的动画结束
+		</td>
     </tr>
 </table>
 
-<h5>Variable Manipulation/Calculations</h5>
+<h5>Variable Manipulation/Calculations<br>
+計算式・変数<br>
+表达式/变量
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="stralias.htm" target="sc"><strong>stralias</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">create a character string alias/filename alias</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			create a character string alias/filename alias<br>
+			文字列・ファイル名エイリアスを作る<br>
+			创建字符串/文件名别名
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="numalias.htm" target="sc"><strong>numalias</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">create a numerical variable alias</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			create a numerical variable alias<br>
+			数値エイリアスをつくる<br>
+			创建数值别名
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="intlimit.htm" target="sc"><strong>intlimit</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">set maximum and minimum for numerical variables</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			set maximum and minimum for numerical variables<br>
+			変数の最大値と最小値を設定する<br>
+			设置变量的最大值和最小值
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="dim.htm" target="sc"><strong>dim</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">declare an array variable</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			declare an array variable<br>
+			配列変数を宣言する<br>
+			声明数组变量
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="mov.htm" target="sc"><strong>mov</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">load a value into a numerical or character variable</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			load a value into a numerical or character variable<br>
+			数値変数・文字変数に値を代入する<br>
+			把值代入数值变量/字符串变量中
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="movn.htm" target="sc"><strong>mov3～mov10</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">load a value into multiple numerical or character variables</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			load a value into multiple numerical or character variables<br>
+			複数の数値変数・文字変数に値を代入する<br>
+			把值代入复数个数值变量/字符串变量中（注：日文版每个命令为单独条目）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="movl.htm" target="sc"><strong>movl</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">load an entire line into an array</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			load an entire line into an array<br>
+			配列の行に対して一度に値を代入<br>
+			同时把值代入到相应的数组的行
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="add.htm" target="sc"><strong>add</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">add numbers</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			add numbers<br>
+			足し算する<br>
+			算加法
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="sub.htm" target="sc"><strong>sub</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">subtract numbers</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			subtract numbers<br>
+			引き算する<br>
+			算减法
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="inc.htm" target="sc"><strong>inc</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">increment variable</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			increment variable<br>
+			１増やす<br>
+			自增一
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="dec.htm" target="sc"><strong>dec</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">decrement variable</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			decrement variable<br>
+			１減らす<br>
+			自减一
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="mul.htm" target="sc"><strong>mul</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">multiply numbers</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			multiply numbers<br>
+			掛け算する<br>
+			算乘法
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="div.htm" target="sc"><strong>div</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">divide numbers</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			divide numbers<br>
+			割り算する<br>
+			算除法
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="mod.htm" target="sc"><strong>mod</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">mod (note that this is a programmatic mod, not a true modulo)</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			mod (note that this is a programmatic mod, not a true modulo)<br>
+			割ったあまりを出す<br>
+			算余数
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="rnd.htm" target="sc"><strong>rnd</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">create a random number (method 1)</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			create a random number (method 1)<br>
+			乱数を作る（その１）<br>
+			生成随机数（方法1）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="rnd2.htm" target="sc"><strong>rnd2</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">create a random number (method 2)</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			create a random number (method 2)<br>
+			乱数を作る（その２）<br>
+			生成随机数（方法2）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="itoa.htm" target="sc"><strong>itoa</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">change a numerical variable into a character or character string</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			change a numerical variable into a character or character string<br>
+			数値を文字列に変換<br>
+			把数值转换成字符串
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="atoi.htm" target="sc"><strong>atoi</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">change a character variable into a number</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			change a character variable into a number<br>
+			文字列を数値に変換<br>
+			把字符串转换成数值
+		</td>
     </tr>
 </table>
 
-<h5>Conditional Expressions/Loops</h5>
+<h5>Conditional Expressions/Loops<br>
+条件式・ループ書式<br>
+条件表达式/循环语法
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="if.htm" target="sc"><strong>if</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">if(conditional statement) { commands }</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			if(conditional statement) { commands }<br>
+			条件判断する<br>
+			条件判断
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="notif.htm" target="sc"><strong>notif</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">if (!(conditional statement)) { commands }</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			if (!(conditional statement)) { commands }<br>
+			条件判断する<br>
+			否定条件判断
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="cmp.htm" target="sc"><strong>cmp</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">compare character variables</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			compare character variables<br>
+			文字どうしを比較する<br>
+			比较两个字符串
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="fchk.htm" target="sc"><strong>fchk</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">check whether specified image tag has been read or not</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			check whether specified image tag has been read or not<br>
+			指定する画像タグを読んでいるかどうか調べる<br>
+			检查指定画像文件是否正在被读取
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="lchk.htm" target="sc"><strong>lchk</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">check whether specified label has been read or not</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			check whether specified label has been read or not<br>
+			指定するラベルを読んでいるかどうか調べる<br>
+			检查指定标号是否正在被读取
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="for.htm" target="sc"><strong>for～next</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">loop commands</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			loop commands<br>
+			ループ命令<br>
+			循环命令（注：日文版标题为for，而next为单独条目）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="break.htm" target="sc"><strong>break</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">break out of a for loop</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			break out of a for loop<br>
+			forループから抜ける<br>
+			从for循环中脱离出来
+		</td>
     </tr>
 </table>
 
-<h5>Right-Click Functionality</h5>
+<h5>Right-Click Functionality<br>
+右クリック機能設定<br>
+右键点击功能设置
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="rmenu.htm" target="sc"><strong>rmenu</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">initialize and display a menu upon right click</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			initialize and display a menu upon right click<br>
+			右クリックしたときメニューを表示する＆メニューの設定をする<br>
+			右键点击的时候显示菜单和菜单设置
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="menusetwindow.htm" target="sc"><strong>menusetwindow</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">initialize window for right click menu</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			initialize window for right click menu<br>
+			右クリックメニューウインドウの設定をする<br>
+			设置右键点击菜单窗口
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="savename.htm" target="sc"><strong>savename</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">specify save filename for right click menu</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			specify save filename for right click menu<br>
+			右クリックメニューのセーブファイル名を指定する<br>
+			指定右键点击菜单的保存文件名
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="menuselectcolor.htm" target="sc"><strong>menuselectcolor</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">specify color for right click menu text</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			specify color for right click menu text<br>
+			右クリックメニューのテキストの文字の色を設定する<br>
+			设置右键点击菜单的文本的文字颜色
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="menuselectvoice.htm" target="sc"><strong>menuselectvoice</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">specify system sound for right click menu</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			specify system sound for right click menu<br>
+			右クリックメニューのシステム音の設定をする<br>
+			设置右键点击菜单的系统音
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="rlookback.htm" target="sc"><strong>rlookback</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">jump to Log Mode upon right click</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			jump to Log Mode upon right click<br>
+			右クリックしたとき回想モードにいくようにする<br>
+			右键点击的时候进入回想模式
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="roff.htm" target="sc"><strong>roff</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">ignore right clicks</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			ignore right clicks<br>
+			右クリックを無効にする<br>
+			右键点击无效化
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="rmode.htm" target="sc"><strong>rmode</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">toggle availability of right clicks on and off</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			toggle availability of right clicks on and off<br>
+			右クリックメニューの有効・無効を切り替える<br>
+			右键点击菜单的有效化/无效化切换
+		</td>
     </tr>
 </table>
 
-<h5>Log Mode</h5>
+<h5>Log Mode<br>
+回想モード<br>
+回想模式
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="lookbackbutton.htm" target="sc"><strong>lookbackbutton</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">specify image button for entry into Log Mode</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			specify image button for entry into Log Mode<br>
+			回想モードの矢印画像を指定する<br>
+			指定回想模式的箭头符号画像
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="lookbackcolor.htm" target="sc"><strong>lookbackcolor</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate text color for Log Mode</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate text color for Log Mode<br>
+			回想モードのテキストの色を指定する<br>
+			指定回想模式的文本颜色
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="lookbackvoice.htm" target="sc"><strong>lookbackvoice</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">play a sound on page up/page down in Log Mode</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			play a sound on page up/page down in Log Mode<br>
+			回想モードでページをめくるときに音を鳴らす<br>
+			回想模式下翻页时发出声音
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="lookbackflush.htm" target="sc"><strong>lookbackflush</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">clear Log Mode</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			clear Log Mode<br>
+			回想バッファを消す<br>
+			清除回想模式
+		</td>
     </tr>
 </table>
 
-<h5>Skip Mode</h5>
+<h5>Skip Mode<br>
+既読スキップ<br>
+已读快进
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="kidokuskip.htm" target="sc"><strong>kidokuskip</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">turn Skip Mode on</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			turn Skip Mode on<br>
+			既読スキップ機能をＯＮにする<br>
+			打开已读快进功能
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="mode_wave_demo.htm" target="sc"><strong>mode_wave_demo</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">play WAVE files even when 「skip to next choice」 is specified</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			play WAVE files even when 「skip to next choice」 is specified<br>
+			「次の選択肢を飛ばす」の時でもWAVEを鳴らす<br>
+			即便是「快进到下一个选择项」的时候也播放WAVE
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="skipoff.htm" target="sc"><strong>skipoff</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">turn Skip Mode off</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			turn Skip Mode off<br>
+			自動文字送り状態を解除する<br>
+			解除自动文字弹出状态
+		</td>
     </tr>
 </table>
 
-<h5>File Access Logs/Global Variables</h5>
+<h5>File Access Logs/Global Variables<br>
+ファイルアクセスログ・グローバル変数<br>
+文件访问日志/全局变量
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="filelog.htm" target="sc"><strong>filelog</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">attempt to create/utilize file access log</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			attempt to create/utilize file access log<br>
+			ファイルアクセスログをとるようにする<br>
+			取得文件访问日志
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="globalon.htm" target="sc"><strong>globalon</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">allow for use of global variables</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			allow for use of global variables<br>
+			グローバル変数を使う設定にする<br>
+			使用全局变量的设置
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="labellog.htm" target="sc"><strong>labellog</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">access log of labels</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			access log of labels<br>
+			ラベルのログを取る<br>
+			取得标号的日志
+		</td>
     </tr>
 </table>
 
-<h5>Save/Load</h5>
+<h5>Save/Load<br>
+セーブ・ロード<br>
+保存/加载
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="savenumber.htm" target="sc"><strong>savenumber</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">modify limit of number of saves</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			modify limit of number of saves<br>
+			セーブの最大数を変更する<br>
+			更改存档的最大数
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="savegame.htm" target="sc"><strong>savegame</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">save game in designated save file</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			save game in designated save file<br>
+			指定した番号のセーブファイルにセーブする<br>
+			保存到指定编号的存档文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="loadgame.htm" target="sc"><strong>loadgame</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">load game from designated save file</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			load game from designated save file<br>
+			指定したセーブ番号からロードする<br>
+			从指定存档编号中加载
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="savefileexist.htm" target="sc"><strong>savefileexist</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">check whether save file exists or not</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			check whether save file exists or not<br>
+			セーブファイルがあるかどうか確認する<br>
+			确认存档文件是否存在
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="saveon.htm" target="sc"><strong>saveon</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter save dialog</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter save dialog<br>
+			セーブモードをオン<br>
+			打开存档模式
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="saveoff.htm" target="sc"><strong>saveoff</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">escape from save dialog</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			escape from save dialog<br>
+			セーブモードをオフ<br>
+			关闭存档模式
+		</td>
     </tr>
 </table>
 
-<h5>Additional Functions</h5>
+<h5>Additional Functions<br>
+追加機能<br>
+附加功能
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="mesbox.htm" target="sc"><strong>mesbox</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">create a message box</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			create a message box<br>
+			メッセージボックスを出す<br>
+			弹出消息框
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="inputstr.htm" target="sc"><strong>inputstr</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">wait for character input by player (method 1)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			wait for character input by player (method 1)<br>
+			文字列をプレイヤーに入力してもらう(その１）<br>
+			让玩家输入字符串（方法1）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="input.htm" target="sc"><strong>input</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">wait for character input by player (method 2)</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			wait for character input by player (method 2)<br>
+			文字列をプレイヤーに入力してもらう(その２）<br>
+			让玩家输入字符串（方法2）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="clickpos.htm" target="sc"><strong>clickpos</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">get coordinates of cursor on click</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			get coordinates of cursor on click<br>
+			クリックしたときのカーソルの座標を取得する<br>
+			点击时获取鼠标光标的坐标
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="systemcall.htm" target="sc"><strong>systemcall</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">perform an action listed in the right click menu</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			perform an action listed in the right click menu<br>
+			右クリックメニューのメニューと同じ動作をさせる<br>
+			执行和右键点击菜单的菜单相同的动作
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="systemcall%20rmenue.htm" target="sc"><strong>systemcallrmenue</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">call up right click menu screen</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			call up right click menu screen<br>
+			切换到右键点击菜单屏幕（注：没有日文版）
+		</td>
     </tr>
 </table>
 
-<h5>Mode Customization Functions</h5>
+<h5>Mode Customization Functions<br>
+特殊モード設定<br>
+特殊模式设置
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="automode.htm" target="sc"><strong>automode</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">allow for use of Auto Mode</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			allow for use of Auto Mode<br>
+			「オートモード」を使用する設定にする<br>
+			设置为使用「自动模式」
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="automode_time.htm" target="sc"><strong>automode_time</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">specify character delay time in Auto Mode when sounds are not being played</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			specify character delay time in Auto Mode when sounds are not being played
+			「オートモード」でWAVEが鳴っていないときの時間設定<br>
+			「自动模式」下不再发出WAVE响声的时间设置
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="defvoicecol.htm" target="sc"><strong>defvoicevol</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">set default volume for voices (new command)</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			set default volume for voices (new command)<br>
+			VOICEデフォルトボリューム設定(新規命令）<br>
+			VOICE默认音量设置（新命令）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="defsevol.htm" target="sc"><strong>defsevol</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">set default volume for SFX</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			set default volume for SFX<br>
+			SEデフォルトボリューム設定<br>
+			SE默认音量设置
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="defmp3vol.htm" target="sc"><strong>defmp3vol</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">set default volume for mp3 files</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			set default volume for mp3 files<br>
+			MP3デフォルトボリューム設定<br>
+			MP3默认音量设置
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="mode_saya.htm" target="sc"><strong>mode_saya</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">allow for use of the mode seen in the doujin game "Saya ~Labyrinth of Immorality~".</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			allow for use of the mode seen in the doujin game "Saya ~Labyrinth of Immorality~".<br>
+			「莢モード」を使用する設定にする<br>
+			设置为使用「荚模式」
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="automode.htm" target="sc"><strong>mode_ext</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">allow for use of the Auto Mode utilized by "Gin'iro"</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			allow for use of the Auto Mode utilized by "Gin'iro"<br>
+			「銀色モード（オートモード）」を使用する設定にする<br>
+			设置为使用「银色模式（自动模式）」
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="mode800.htm" target="sc"><strong>mode800</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">set screen size to 800x600</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			set screen size to 800x600<br>
+			画面サイズを800×600にする<br>
+			把屏幕尺寸变成800×600
+		</td>
     </tr>
 </table>
 
-<h5>Plugins/Archives</h5>
+<h5>Plugins/Archives<br>
+プラグイン・アーカイブ<br>
+插件/归档
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="soundpressplgin.htm" target="sc"><strong>soundpressplgin</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">load compressed audio functionality via plugin/dll (nowadays one can just use the DirectSound commands)</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			load compressed audio functionality via plugin/dll (nowadays one can just use the DirectSound commands)<br>
+			音楽圧縮プラグインを指定する（現在はDirectX命令で代用できる）<br>
+			指定音乐压缩插件（现在可以用DirectX命令代替使用）
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="spi.htm" target="sc"><strong>spi</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">load compressed image functionality via plugin/dll</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			load compressed image functionality via plugin/dll<br>
+			画像圧縮プラグインを指定する<br>
+			指定图像压缩插件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="arc.htm" target="sc"><strong>arc</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">use specified archive</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			use specified archive<br>
+			アーカイブを使う<br>
+			使用指定归档文件
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="nsa.htm" target="sc"><strong>nsa</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">turn NSA archive access on</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			turn NSA archive access on<br>
+			ＮＳＡアーカイブモードにする<br>
+			变成NSA归档模式
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="nsadir.htm" target="sc"><strong>nsadir</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate folder where NSA archives are located</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate folder where NSA archives are located<br>
+			ＮＳＡアーカイブがあるフォルダを指定する(追加分)<br>
+			指定存在NSA归档文件的目录（新增部分）
+		</td>
     </tr>
 </table>
 
-<h5>Console</h5>
+<h5>Console<br>
+情報表示<br>
+信息显示
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="versionstr.htm" target="sc"><strong>versionstr</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">modify version string</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			modify version string<br>
+			バージョン情報の文章を変更する<br>
+			修改版本信息的文章
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="caption.htm" target="sc"><strong>caption</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">modify window title</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			modify window title<br>
+			ウインドウのタイトルを変更する<br>
+			修改窗口的标题
+		</td>
     </tr>
 </table>
 
-<h5>Data Parsing</h5>
+<h5>Data Parsing<br>
+各種情報取得<br>
+各种信息获取
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="date.htm" target="sc"><strong>date</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">Get year, month, and day</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			Get year, month, and day<br>
+			年、月、日を取得する<br>
+			获取年月日
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="time.htm" target="sc"><strong>time</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">get current time by hours, minutes, and seconds</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			get current time by hours, minutes, and seconds<br>
+			時、分、秒を取得する<br>
+			获取时分秒
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="savetime.htm" target="sc"><strong>savetime</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">get the date that the specified savefile was saved on</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			get the date that the specified savefile was saved on<br>
+			指定したセーブファイルをセーブした日付と時間を取得する<br>
+			获取保存指定存档文件的日期与时间
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="getversion.htm" target="sc"><strong>getversion</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">get the version string of the current NScripter build</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			get the version string of the current NScripter build<br>
+			実行しているNScripterのバージョンを取得する<br>
+			获取正在执行的NScripter的版本
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="getreg.htm" target="sc"><strong>getreg</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">get a value from the Windows registry</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			get a value from the Windows registry<br>
+			レジストリを参照する<br>
+			参考注册表
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFCC" class="line"><a
         href="getini.htm" target="sc"><strong>getini</strong></a></td>
-        <td width="500" bgcolor="#CCFFCC" class="line">read an ini file</td>
+        <td width="500" bgcolor="#CCFFCC" class="line">
+			read an ini file<br>
+			ｉｎｉファイルを参照する<br>
+			参考ini文件
+		</td>
     </tr>
 </table>
 
-<h5>Menubar Functions</h5>
+<h5>Menubar Functions<br>
+ウィンドウメニュー関連<br>
+窗口菜单栏相关
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="killmenu.htm" target="sc"><strong>killmenu</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">erase menubar</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			erase menubar<br>
+			メニューを消す<br>
+			隐藏菜单栏
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><a
         href="defaultspeed.htm" target="sc"><strong>defaultspeed</strong></a></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">designate text display speed as selectable on the menubar</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			designate text display speed as selectable on the menubar<br>
+			メニューで選択できる文字表示スピードを指定する<br>
+			指定菜单栏里可选择的文字显示速度
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCCCFF" class="line"><a
         href="tokusyu11.htm" target="sc"><strong>!sd</strong></a></td>
-        <td width="500" bgcolor="#CCCCFF" class="line">use the text display speed handed down by the defaultspeed command</td>
+        <td width="500" bgcolor="#CCCCFF" class="line">
+			use the text display speed handed down by the defaultspeed command<br>
+			defultspeed命令で設定した文字表示スピードにする<br>
+			变成用defultspeed命令设置的文字显示速度
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="menu_full.htm" target="sc"><strong>menu_full</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter fullscreen mode</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter fullscreen mode<br>
+			フルスクリーンモードにする<br>
+			进入全屏模式
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="menu_window.htm" target="sc"><strong>menu_window</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter window mode</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter window mode<br>
+			ウインドウ画面モードにする<br>
+			进入窗口屏幕模式
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="menu_click_def.htm" target="sc"><strong>menu_click_def</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter default menubar operation mode</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter default menubar operation mode<br>
+			普通に表示するモードにする<br>
+			进入普通的显示模式
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><a
         href="menu_click_page.htm" target="sc"><strong>menu_click_page</strong></a></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter a mode in which menu displays with every page</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter a mode in which menu displays with every page<br>
+			１ページごとに表示するモードにする<br>
+			进入逐页的显示模式
+		</td>
     </tr>
 </table>
 
-<h5>System Customization Functions</h5>
+<h5>System Customization Functions<br>
+システムカスタマイズ関連<br>
+系统自定义相关
+</h5>
 
 <table border="0" cellpadding="3" cellspacing="0" class="line">
     <tr>
         <td width="100" bgcolor="#FFCCCC" class="line"><strong>*customsel</strong></td>
-        <td width="500" bgcolor="#FFCCCC" class="line">a label that interacts with the csel command</td>
+        <td width="500" bgcolor="#FFCCCC" class="line">
+			a label that interacts with the csel command<br>
+			cselと対応するラベル<br>
+			与csel对应的标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#FFFFCC" class="line"><strong>textgosub
         </strong></td>
-        <td width="500" bgcolor="#FFFFCC" class="line">generally used to provide a popup text during click wait state within system customization</td>
+        <td width="500" bgcolor="#FFFFCC" class="line">
+			generally used to provide a popup text during click wait state within system customization<br>
+			システムカスタマイズ時通常文章のクリック待ちで飛んでくるラベル<br>
+			系统自定义时通常文章的点击等待下跳转的标号	
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>csel</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">delineate choices within system customization</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			delineate choices within system customization<br>
+			システムカスタマイズ時の選択肢命令<br>
+			系统自定义时的选择项命令
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>cselbtn</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">create buttons with choice text</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			create buttons with choice text<br>
+			選択肢のテキストでボタンを作る<br>
+			用选择项的文本制作按钮
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>getcselnum</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">get number of csel choice branches</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			get number of csel choice branches<br>
+			csel選択肢の数を取得する<br>
+			获取csel选择项的数量
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>cselgoto</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">jump to a label created by csel</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			jump to a label created by csel<br>
+			cselで設定したラベルへ飛ぶ<br>
+			跳转到用csel设置的标号
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>textbtnwait</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter click wait state as defined by customwait</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter click wait state as defined by customwait<br>
+			customwait時のクリック待ちをする<br>
+			customwait时的点击等待
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>selectbtnwait</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">enter click wait state as defined by customsel</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			enter click wait state as defined by customsel<br>
+			customsel時のクリック待ちをする<br>
+			customsel时的点击等待
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>texec</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">delete text while waiting for repagination</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			delete text while waiting for repagination<br>
+			改ページ待ちの場合テキストを消去する<br>
+			删除换页等待的场景文本
+		</td>
     </tr>
     <tr>
         <td width="100" bgcolor="#CCFFFF" class="line"><strong>getcursorpos</strong></td>
-        <td width="500" bgcolor="#CCFFFF" class="line">get current position of text cursor</td>
+        <td width="500" bgcolor="#CCFFFF" class="line">
+			get current position of text cursor<br>
+			テキストカーソルの位置を取得する<br>
+			获取文本光标的位置
+		</td>
     </tr>
 </table>
 </body>
