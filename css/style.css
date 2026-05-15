@@ -34,7 +34,7 @@ h1 {
 }
 p {
 	font-size: small;
-	letter-spacing: 100%;/*180%;*/
+	/*letter-spacing: 100%;*/ /*180%;*/
 	text-align: left;
 }
 a img {
